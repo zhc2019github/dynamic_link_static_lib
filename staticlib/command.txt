@@ -1,0 +1,2 @@
+gcc -c sub.c -fPIC -shared 
+ar -crv libsub.a sub.o
