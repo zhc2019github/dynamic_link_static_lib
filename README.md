@@ -1,0 +1,1 @@
+# dynamic_link_static_lib
