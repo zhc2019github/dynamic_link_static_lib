@@ -1,4 +1,5 @@
 #include"sub.h"
+#include"dynamic.h"
 int sub(int a,int b){
-return a-b;
+return add(a,b);
 }

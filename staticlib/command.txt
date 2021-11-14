@@ -1,2 +1,3 @@
-gcc -c sub.c -fPIC -shared 
-ar -crv libsub.a sub.o
+ gcc -c sub.c -o sub.o -fPIC -shared -I ../dynamiclib -L ../dynamiclib -l dynamic
+ ar -crv libsub.a sub.o
+ nm libsub.a#查看库里包含哪些函数 
