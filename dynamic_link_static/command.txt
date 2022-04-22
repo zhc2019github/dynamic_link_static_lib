@@ -1,0 +1,2 @@
+gcc main.c -o main -I dynamiclib/ -L dynamiclib/ -l dynamic
+export LD_LIBRARY_PATH=${PWD}/dynamiclib/;./main

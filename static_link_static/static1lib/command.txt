@@ -1,0 +1,2 @@
+gcc -o dynamic1.o -c dynamic1.c -I../dynamic2lib
+gcc -o libdynamic1.so dynamic1.o -shared -fPIC -L ../dynamic2lib/ -l dynamic2

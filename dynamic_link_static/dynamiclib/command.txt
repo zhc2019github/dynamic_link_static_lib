@@ -1,0 +1,2 @@
+gcc -o dynamic.o -c dynamic.c -I../staticlib
+gcc -o libdynamic.so dynamic.o -shared -fPIC -L../staticlib -lstatic

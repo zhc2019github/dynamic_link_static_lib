@@ -1,0 +1,2 @@
+gcc -o static.o -shared -fPIC -c static.c
+ar -crv libstatic.a static.o
