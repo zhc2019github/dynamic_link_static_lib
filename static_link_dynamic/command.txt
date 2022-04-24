@@ -1,0 +1,4 @@
+#单独用静态库会报错
+gcc main.c -o main -I static1lib/ -L static1lib/ -l static1
+#用静态库和动态库就不报错了
+export LD_LIBRARY_PATH=${PWD}/dynamic2lib/;./main

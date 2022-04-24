@@ -1,1 +1,6 @@
+#编译的时候确实用一个库就可以了。
 gcc main.c -o main -I dynamic1lib/ -L dynamic1lib/ -l dynamic1
+#执行的时候只是使用一个库会报错
+export LD_LIBRARY_PATH=${PWD}/dynamic1lib/;./main
+#执行的时候使用两个库才能正常
+export LD_LIBRARY_PATH=${PWD}/dynamic1lib/:${PWD}/dynamic2lib;./main

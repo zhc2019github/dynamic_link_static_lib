@@ -1,2 +1,0 @@
-gcc main.c -o main -L . -L ../dynamiclib/  -I . -l sub -l dynamic
-LD_LIBRARY_PATH 添加环境变量
