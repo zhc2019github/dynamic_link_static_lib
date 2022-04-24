@@ -1,1 +1,2 @@
-gcc -fPIC -shared -o libdynamic2.so dynamic2.c
+gcc -c static2.c
+ar -crv libstatic2.a static2.o

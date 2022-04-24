@@ -1,1 +1,4 @@
-gcc main.c -o main -I dynamic1lib/ -L dynamic1lib/ -l dynamic1
+#单独用库1会报错
+gcc main.c -o main -I static1lib/  -L static1lib/ -l static1
+#用合成后的库
+gcc main.c -o main -I static1lib/  -L static1lib/ -l12

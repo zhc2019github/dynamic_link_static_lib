@@ -1,2 +1,6 @@
-gcc -o dynamic1.o -c dynamic1.c -I../dynamic2lib
-gcc -o libdynamic1.so dynamic1.o -shared -fPIC -L ../dynamic2lib/ -l dynamic2
+gcc -c static1.c -I ../static2lib/
+ar -crv libstatic1.a static1.o
+#下面是这个把另外一个库打包进来
+cp ../static2lib/libstatic2.a  .
+ar -rcT lib12.a libstatic1.a libstatic2.a
+
